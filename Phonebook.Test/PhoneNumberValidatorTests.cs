@@ -7,7 +7,7 @@ namespace Phonebook.Test
   public class PhoneNumberValidatorTests
   {
     [Test]
-    public void PhoneNumberValidator_DoesNotThrowException()
+    public void PhoneNumberValidator_ValidPhoneNumber()
     {
       //Arrage
       PhoneNumber validPhone = new PhoneNumber("+8 (800) 555-3535", PhoneNumberType.Work);
@@ -30,7 +30,7 @@ namespace Phonebook.Test
     }
 
     [Test]
-    public void ValidateList_DoesNotThrowException()
+    public void ValidateList_ValidPhoneNumber()
     {
       //Arrage
       var phoneNumbers = new List<PhoneNumber>
@@ -43,7 +43,7 @@ namespace Phonebook.Test
     }
 
     [Test]
-    public void ValidateList_DoesNotThrowException_EmptyList()
+    public void ValidateList_EmptyList()
     {
       //Arrage
       var phoneNumbers = new List<PhoneNumber> {};
